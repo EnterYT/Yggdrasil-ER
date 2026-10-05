@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.geometry.Insets?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="net.enter.yggdrasil.LinkBoardController"
+            stylesheets="@LinkBoardView.css">
+    <center>
+        <ScrollPane fitToWidth="true" fitToHeight="true">
+            <content>
+                <Pane fx:id="workspace"
+                      prefWidth="1200"
+                      prefHeight="800">
+                    <VBox fx:id="playerNode"
+                          layoutX="40"
+                          layoutY="25"
+                          prefWidth="150">
+                        <Pane fx:id="dragPane"
+                              prefHeight="25"
+                              minWidth="50">
+                            <VBox.margin>
+                                <Insets left="10" right="10" top="10" bottom="10"/>
+                            </VBox.margin>
+                        </Pane>
+
+                        <Label styleClass="card-title"
+                               text="CardTitle"/>
+
+                        <Label styleClass="uuid"
+                               text="id : UUID"/>
+
+                        <Label styleClass="name"
+                               text="name : String"/>
+                    </VBox>
+
+                </Pane>
+            </content>
+        </ScrollPane>
+    </center>
+</BorderPane>
