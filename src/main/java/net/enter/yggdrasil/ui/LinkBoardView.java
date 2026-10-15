@@ -1,4 +1,4 @@
-package net.enter.yggdrasil;
+package net.enter.yggdrasil.ui;
 
 import com.dlsc.fxmlkit.fxml.FxmlView;
 

@@ -6,4 +6,6 @@ module net.enter.yggdrasil {
 
     opens net.enter.yggdrasil to javafx.fxml;
     exports net.enter.yggdrasil;
+    exports net.enter.yggdrasil.ui;
+    opens net.enter.yggdrasil.ui to javafx.fxml;
 }

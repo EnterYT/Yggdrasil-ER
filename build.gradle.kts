@@ -7,7 +7,7 @@ plugins {
 }
 
 group = "net.enter"
-version = "0.1"
+version = "0.2"
 
 repositories {
     mavenCentral()
@@ -27,7 +27,7 @@ tasks.withType<JavaCompile> {
 
 application {
     mainModule.set("net.enter.yggdrasil")
-    mainClass.set("net.enter.yggdrasil.LinkBoardApplication")
+    mainClass.set("net.enter.yggdrasil.ui.LinkBoardApplication")
 }
 
 javafx {
